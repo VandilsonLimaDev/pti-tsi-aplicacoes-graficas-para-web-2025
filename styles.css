@@ -1,0 +1,58 @@
+:root {
+    --color-primary: #212121;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+header, footer, main {
+    padding-block: 1.5rem 2.3rem;
+    padding-inline: 2.5rem;
+}
+header, footer {
+    background-color: var(--color-primary);
+    color:white;
+}
+footer {
+    padding-bottom: 1.5rem;
+}
+h1, h2 {
+    padding-bottom: .7rem;
+}
+footer {
+    text-align: center;
+}
+main {
+    display: flex;
+    flex:1;
+    gap:2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    width: 100%;
+}
+textarea {
+    min-height: 8rem;
+}
+input, button {
+    padding:0.6rem 1rem;
+}
+button[type="submit"] {
+    background-color: var(--color-primary);
+    color:white;
+}
+section:nth-child(1) {
+    width:20rem;
+}
